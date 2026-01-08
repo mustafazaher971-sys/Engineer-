@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الأسعار | البشمهندس أحمد زاهر</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="100.jpg">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'El Messiri',sans-serif}
+
+body{
+  min-height:100vh;
+  background:url("500.jpg") center/cover fixed no-repeat;
+  color:#fff;
+  padding-top:90px;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(5,8,13,.45);
+  z-index:-1;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar{
+  position:fixed;
+  top:0;width:100%;
+  padding:15px 30px;
+  background:rgba(5,8,13,.9);
+  display:flex;
+  align-items:center;
+  gap:15px;
+  z-index:100;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#E6B450;
+  font-size:20px;
+  font-weight:700;
+}
+.brand img{width:50px}
+
+.nav-btn{
+  margin-right:auto;
+  display:flex;
+  gap:10px;
+}
+.nav-btn a{
+  color:#E6B450;
+  border:1px solid #E6B450;
+  padding:6px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  transition:.3s;
+}
+.nav-btn a:hover{background:#E6B450;color:#05080D}
+
+/* ===== PAGE ===== */
+.page{text-align:center;padding:40px 20px}
+.page h1{color:#E6B450;font-size:36px;margin-bottom:10px}
+.page p{opacity:.9;margin-bottom:40px}
+
+/* ===== PRICING ===== */
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+.card{
+  background:rgba(5,8,13,.65);
+  border:1px solid rgba(230,180,80,.4);
+  border-radius:16px;
+  padding:30px 20px;
+  transition:.4s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 35px rgba(230,180,80,.5);
+}
+.card h2{color:#E6B450;margin-bottom:10px}
+.price{font-size:30px;margin:15px 0}
+.card p{opacity:.85;font-size:14px;margin-bottom:15px}
+.card ul{list-style:none;text-align:right}
+.card ul li{margin:8px 0}
+.card ul i{color:#E6B450;margin-left:6px}
+
+.card a{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 24px;
+  border-radius:10px;
+  border:1px solid #E6B450;
+  color:#E6B450;
+  text-decoration:none;
+}
+.card a:hover{background:#E6B450;color:#05080D}
+
+/* ===== WHATSAPP ===== */
+.whatsapp{
+  position:fixed;
+  bottom:20px;right:20px;
+  width:60px;height:60px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="top-bar">
+  <div class="brand">
+    <img src="100.jpg">
+    <span>البشمهندس | أحمد زاهر</span>
+  </div>
+
+  <div class="nav-btn">
+    <a href="index.html">⬅ الرئيسية</a>
+    <a href="pricing-en.html">EN</a>
+  </div>
+</header>
+
+<section class="page">
+  <h1>💰 أسعار الخدمات</h1>
+  <p>اختار الباقة المناسبة ليك</p>
+
+  <div class="pricing">
+
+    <div class="card">
+      <h2>🔹 Basic</h2>
+      <div class="price">1500 جنيه</div>
+      <p>مناسبة للمشاريع البسيطة والبدايات</p>
+      <ul>
+        <li><i class="fa fa-check"></i> صفحة واحدة</li>
+        <li><i class="fa fa-check"></i> تصميم متجاوب</li>
+        <li><i class="fa fa-check"></i> زر واتساب</li>
+      </ul>
+      <a href="https://wa.me/201124864739">اطلب الآن</a>
+    </div>
+
+    <div class="card">
+      <h2>⭐ Pro</h2>
+      <div class="price">3000 جنيه</div>
+      <p>حل متكامل للشركات الصغيرة</p>
+      <ul>
+        <li><i class="fa fa-check"></i> حتى 5 صفحات</li>
+        <li><i class="fa fa-check"></i> أنيميشن</li>
+        <li><i class="fa fa-check"></i> صفحة أسعار</li>
+      </ul>
+      <a href="https://wa.me/201124864739">اطلب الآن</a>
+    </div>
+
+    <div class="card">
+      <h2>👑 Business</h2>
+      <div class="price">حسب الاتفاق</div>
+      <p>أنظمة ومشاريع كبيرة</p>
+      <ul>
+        <li><i class="fa fa-check"></i> نظام كامل</li>
+        <li><i class="fa fa-check"></i> لوحة تحكم</li>
+        <li><i class="fa fa-check"></i> دعم ممتد</li>
+      </ul>
+      <a href="https://wa.me/201124864739">تواصل</a>
+    </div>
+
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/201124864739">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
